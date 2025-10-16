@@ -62,20 +62,20 @@ var addTask = function() {
   console.log('Add Task...');
 
   //Create a new list item with the text from the #new-task:
-  if (!taskInput.value) return;
+  if (!taskInput.value || taskInput.value.trim() === '') return;
   
-  var listItem=createNewTaskElement(taskInput.value);
+  var listItem = createNewTaskElement(taskInput.value);
 
   //Append listItem to incompleteTaskHolder
   incompleteTaskHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskCompleted);
-  taskInput.value='';
+  taskInput.value = '';
 }
 
 //Edit an existing task.
 var editTask = function() {
   console.log('Edit Task...');
-  console.log(`Change "edit" to 'save'`);
+  console.log('Change "edit" to "save"');
 
   var listItem = this.parentNode;
 
