@@ -89,7 +89,7 @@ body {
 }
 
 /* New Task */
-.add-elem__label[for='new-task'] {
+.add-elem__label[for="new-task"] {
     display: block;
     margin: 0 0 20px;
 }
@@ -139,11 +139,11 @@ body {
 }
 
 /* Edit Task */
-.tasks .task .task__text[type=text] {
+.tasks .task .task__text[type="text"] {
     display:none
 }
 
-.tasks .task.editMode .task__text[type=text] {
+.tasks .task.editMode .task__text[type="text"] {
     display:inline-block;
     width:224px
 }
