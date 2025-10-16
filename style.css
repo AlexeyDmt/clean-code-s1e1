@@ -16,6 +16,10 @@ body {
 .todo-header__link {
   font-family: fantasy, cursive;
 }
+.title {
+  font-size: 24px;
+  text-align: center;
+}
 
 @media (max-width:768px) {
   .todo-header {
