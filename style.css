@@ -4,18 +4,22 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .todo-header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .todo-header__image {
   width: 100%;
 }
+
 .todo-header__link {
   font-family: fantasy, cursive;
 }
+
 .todo-header__title {
   font-size: 24px;
   text-align: center;
@@ -24,18 +28,21 @@ body {
 @media (max-width:768px) {
   .todo-header {
     text-align: center;
+  }
 }
-}
+
 .todo-container {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .add-elem__wrapper {
   display: flex;
   justify-content: space-between;
@@ -49,13 +56,16 @@ body {
   margin: 0;
   padding: 0px;
 }
+
 .task {
   list-style: none;
 }
+
 .todo__input,
 .todo__btn {
   outline: none;
 }
+
 .todo__btn {
   background: none;
   border: 0px;
@@ -65,6 +75,7 @@ body {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .todo__btn:hover {
   color: #3a3a3a;
 }
@@ -80,6 +91,7 @@ body {
   margin: 0;
   text-transform: uppercase;
 }
+
 .todo__input {
   margin: 0;
   font-size: 18px;
@@ -92,6 +104,7 @@ body {
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .todo__input:focus {
   color: #333;
 }
@@ -101,6 +114,7 @@ body {
   display: block;
   margin: 0 0 20px;
 }
+
 #new-task {
   width: 318px;
 }
@@ -114,6 +128,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .task > * {
   vertical-align: middle;
 }
@@ -121,10 +136,12 @@ body {
 .task > .todo__input[type="checkbox"] {
   margin: 0 10px;
 }
+
 .task--editing .todo__input[type="checkbox"] {
   pointer-events: none;
   opacity: 0;
 }
+
 .task > .task__label {
   padding-left: 10px;
   box-sizing: border-box;
@@ -132,6 +149,7 @@ body {
   width: 226px;
   word-wrap: break-word;
 }
+
 .task > .todo__input[type="text"] {
   width: 226px;
 }
@@ -140,11 +158,13 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
+
 .delete .delete__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .delete .delete__img:hover {
   transform: rotateZ(0);
 }
