@@ -41,14 +41,14 @@ body {
   margin-right: 60px;
 }
 .tasks {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 .task {
-  list-style:none;
+  list-style: none;
 }
-.todo__input, .todo__btn{
-  outline:none;
+.todo__input, .todo__btn {
+  outline: none;
 }
 .todo__btn {
   background: none;
@@ -65,7 +65,7 @@ body {
 
 /* Heading */
 .todo__title,
-.add-elem__label{
+.add-elem__label {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -142,14 +142,14 @@ body {
 
 /* Edit Task */
 .tasks .task .task__text[type="text"] {
-  display:none
+  display: none
 }
 
 .tasks .task.editMode .task__text[type="text"] {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .tasks .task.editMode .task__label {
-  display:none;
+  display: none;
 }
