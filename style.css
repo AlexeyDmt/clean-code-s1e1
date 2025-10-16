@@ -123,7 +123,7 @@ body {
   width: 226px;
 }
 .task > .todo__input[type="text"] {
-  width: 226px
+  width: 226px;
 }
 .delete .delete__img {
   height: 2em;
@@ -136,18 +136,18 @@ body {
 
 /* Completed */
 #completed-tasks .task__label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .tasks .task .task__text[type="text"] {
-  display: none
+  display: none;
 }
 
 .tasks .task.editMode .task__text[type="text"] {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .tasks .task.editMode .task__label {
