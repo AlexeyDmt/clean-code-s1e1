@@ -47,7 +47,8 @@ body {
 .task {
   list-style: none;
 }
-.todo__input, .todo__btn {
+.todo__input,
+.todo__btn {
   outline: none;
 }
 .todo__btn {
