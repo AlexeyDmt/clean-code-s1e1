@@ -17,7 +17,7 @@
       <p class="add-elem">
         <label for="new-task" class="add-elem__label">Add Item</label>
         <div class="add-elem__wrapper">
-          <input id="new-task"class="todo__input add-elem__text" type="text">
+          <input id="new-task"class="todo__input" type="text">
           <button class="todo__btn add-elem__submit-btn">Add</button>
         </div>
       </p>
@@ -30,16 +30,16 @@
           <button class="todo__btn edit">Edit</button>
           <button class="todo__btn delete"><img class="delete__img" src="./remove.svg"></button>
         </li>
-        <li class="task task--edit">
+        <li class="task">
           <input type="checkbox" class="todo__input task__checkbox">
           <label class="task__label">Go Shopping</label>
           <input type="text" value="Go Shopping" class="todo__input task__input task__text">
-          <button class="todo__btn edit">Save</button>
+          <button class="todo__btn edit">Edit</button>
           <button class="todo__btn delete"><img class="delete__img" src="./remove.svg"></button>
         </li>
       </ul>
       <h3 class="todo__title">Completed</h3>
-      <ul id="completed-tasks" class="tasks tasks--completed">
+      <ul id="completed-tasks" class="tasks">
         <li class="task">
           <input type="checkbox" class="todo__input task__checkbox" checked>
           <label class="task__label">See the Doctor</label>

@@ -10,10 +10,10 @@ body {
     display: block;
     text-align: right;
 }
-.todo-header .todo-header__image {
+.todo-header__image {
     width: 100%;
 }
-.todo-header .todo-header__link {
+.todo-header__link {
     font-family: fantasy, cursive;
 }
 
@@ -43,7 +43,7 @@ body {
     margin:0;
     padding: 0px;
 }
-.task, .todo__title {
+.task {
     list-style:none;
 }
 .todo__input, .todo__btn{
