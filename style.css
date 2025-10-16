@@ -1,153 +1,155 @@
 /* Basic Style */
 body {
-    background-color: #f8f8f8;
-    color: #333;
-    font-family: Lato, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Lato, sans-serif;
 }
 .todo-header {
-    width: 500px;
-    margin: 0 auto;
-    display: block;
-    text-align: right;
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
 }
 .todo-header__image {
-    width: 100%;
+  width: 100%;
 }
 .todo-header__link {
-    font-family: fantasy, cursive;
+  font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.todo-header { text-align: center;
+  .todo-header {
+    text-align: center;
 }
 }
 .todo-container {
-    display: block;
-    width: 500px;
-    margin: 0 auto 0;
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
 }
 .task__label {
-    width: 56%;
-    display: inline-block;
-    flex-grow: 1
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1
 }
 .add-elem__wrapper {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .add-elem__wrapper .add-elem__submit-btn {
-   margin-right: 60px;
+  margin-right: 60px;
 }
 .tasks {
-    margin:0;
-    padding: 0px;
+  margin:0;
+  padding: 0px;
 }
 .task {
-    list-style:none;
+  list-style:none;
 }
 .todo__input, .todo__btn{
-    outline:none;
+  outline:none;
 }
 .todo__btn {
-    background: none;
-    border: 0px;
-    color: #888;
-    font-size: 15px;
-    width: 60px;
-    font-family: Lato, sans-serif;
-    cursor: pointer;
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
 }
 .todo__btn:hover {
-    color: #3a3a3a;
+  color: #3a3a3a;
 }
+
 /* Heading */
 .todo__title,
 .add-elem__label{
-    color: #333;
-    font-weight: 700;
-    font-size: 15px;
-    border-bottom: 2px solid #333;
-    padding: 30px 0 10px;
-    margin: 0;
-    text-transform: uppercase;
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
 }
 .todo__input {
-    margin: 0;
-    font-size: 18px;
-    line-height: 18px;
-    height: 21px;
-    padding: 0 9px;
-    border: 1px solid #ddd;
-    background: #fff;
-    border-radius: 6px;
-    font-family: Lato, sans-serif;
-    color: #888;
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 21px;
+  padding: 0 9px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
 }
 .todo__input:focus {
-    color: #333;
+  color: #333;
 }
 
 /* New Task */
 .add-elem__label[for="new-task"] {
-    display: block;
-    margin: 0 0 20px;
+  display: block;
+  margin: 0 0 20px;
 }
 #new-task {
-    width: 318px;
+  width: 318px;
 }
 
 /* Task list */
 .task {
-    overflow: hidden;
-    padding: 20px 0;
-    border-bottom: 1px solid #eee;
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .task > * {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .task > .todo__input[type="checkbox"] {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 .task > .task__label {
-    padding-left: 10px;
-    box-sizing: border-box;
-    font-size: 18px;
-    width: 226px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  width: 226px;
 }
-.task >    .todo__input[type="text"] {
-    width: 226px
+.task > .todo__input[type="text"] {
+  width: 226px
 }
 .delete .delete__img {
-    height: 2em;
-    transform: rotateZ(45deg);
-    transition: transform 200ms ease-in;
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
 }
 .delete .delete__img:hover {
-    transform: rotateZ(0);
+  transform: rotateZ(0);
 }
 
 /* Completed */
 #completed-tasks .task__label {
-    text-decoration: line-through
-    color: #888;
+  text-decoration: line-through
+  color: #888;
 }
 
 /* Edit Task */
 .tasks .task .task__text[type="text"] {
-    display:none
+  display:none
 }
 
 .tasks .task.editMode .task__text[type="text"] {
-    display:inline-block;
-    width:224px
+  display:inline-block;
+  width:224px
 }
 
 .tasks .task.editMode .task__label {
-    display:none;
+  display:none;
 }
