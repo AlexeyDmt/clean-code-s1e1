@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -24,6 +24,7 @@ body {
 .todo-header__title {
   font-size: 24px;
   text-align: center;
+  overflow: hidden;
 }
 
 @media (max-width:768px) {
@@ -41,7 +42,7 @@ body {
 .task__label {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .add-elem__wrapper {
